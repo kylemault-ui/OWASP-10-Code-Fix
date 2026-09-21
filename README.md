@@ -17,7 +17,9 @@ What is wrong? The original code uses MD5 for passwords. MD5 is old and is not s
 
 What is wrong? The original code uses SHA-1 for a password. SHA-1 is old and should not be used for password storage. How did I fix it? I changed it to use bcrypt. Why does this help? Bcrypt is made for passwords and makes them harder to crack.
 
-5. Injection What is wrong? The original code puts the username directly into a SQL query. An attacker could enter SQL commands instead of a normal username. How did I fix it? I used a parameter in the SQL query instead of putting the username directly into it. Why does this help? The database treats the username as data instead of a SQL command. This helps stop SQL injection.
+5. Injection
+
+What is wrong? The original code puts the username directly into a SQL query. An attacker could enter SQL commands instead of a normal username. How did I fix it? I used a parameter in the SQL query instead of putting the username directly into it. Why does this help? The database treats the username as data instead of a SQL command. This helps stop SQL injection.
 
 6. Injection
 
@@ -27,10 +29,14 @@ What is wrong? The original code trusts the username given by the user. An attac
 
 What is wrong? The original password reset code only uses an email and a new password. Someone could try to reset another person's password without proving they own the account. How did I fix it? I added a reset token that must be correct before the password can be changed. Why does this help? The reset token gives the program another way to check that the password reset is allowed.
 
-8. Software and Data Integrity Failures What is wrong? The original code loads a JavaScript file without checking if it has been changed. If the file was changed, the website could run the changed code. How did I fix it?
+8. Software and Data Integrity Failures
+  
+What is wrong? The original code loads a JavaScript file without checking if it has been changed. If the file was changed, the website could run the changed code. How did I fix it?
 I added a file hash check. Why does this help? The hash can be used to check if the file is still the same. If the hash does not match, the file was changed.
 
-9. Server-Side Request Forgery What is wrong? The original code lets the user enter any URL and makes the server connect to it. This could let someone make the server connect to places it should not. How did I fix it? I check that the URL uses HTTP or HTTPS and added a timeout. Why does this help? This adds a check before the request is made and stops the request from taking too long. A real application should also use a list of trusted websites and block internal addresses.
+9. Server-Side Request Forgery What is wrong?
+  
+The original code lets the user enter any URL and makes the server connect to it. This could let someone make the server connect to places it should not. How did I fix it? I check that the URL uses HTTP or HTTPS and added a timeout. Why does this help? This adds a check before the request is made and stops the request from taking too long. A real application should also use a list of trusted websites and block internal addresses.
 
 10. Identification and Authentication Failures
 
