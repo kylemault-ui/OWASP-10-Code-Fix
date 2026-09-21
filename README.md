@@ -1,6 +1,5 @@
 # OWASP-10-Code-Fix
-Okay for this assignment I put all the fixed codes in 1 .py file so all 10 are together but you can take each one and use them where every you need to they have everything that is need to run separate I just did not want to make like 10 different files also in this read me has all of what is wrong and how to fix and why does this help. This is the main source is used for this 2 https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html but I also used this two just not as much https://zetcode.com/terms-testing/owasp-testing/ and https://zetcode.com/terms-testing/owasp-testing/
-
+Okay for this assignment I put all the fixed codes in 1 .py file so all 10 are together but you can take each one and use them where every you need to they have everything that is need to run separate I just did not want to make like 10 different files also in this read me has all of what is wrong and how to fix and why does this help. This is the main source is used for this 2 https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html but I also used this two just not as much https://zetcode.com/terms-testing/owasp-testing/ and https://owasp.org/projects/web-security-testing-guide
 
 1. Broken Access Control
 
